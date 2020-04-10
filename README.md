@@ -9,10 +9,11 @@
 ## Overview
 ### Description
 [Description of your app]
+A Social Media platform where friends get boba together.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
+- **Category: Social**
 - **Mobile:**
 - **Story:**
 - **Market:**
