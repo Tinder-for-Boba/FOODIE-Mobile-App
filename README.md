@@ -1,5 +1,3 @@
-# Tinder-for-Boba
-
 # APP_NAME_HERE
 
 ## Table of Contents
