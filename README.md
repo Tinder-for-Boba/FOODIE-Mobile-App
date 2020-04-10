@@ -1,4 +1,7 @@
-# BOND WITH BOBA
+Group Project - README Template
+===
+
+# Boba + Friends
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -8,15 +11,14 @@
 
 ## Overview
 ### Description
-[Description of your app]
-A Social Media platform where friends get boba together.
+Want to have boba with your friends, but don't know where or who to meet up. Look no further than the **Boba + Friends** app, where you can find your mutual availabilities and the app will decide where to meet.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category: Social**
-- **Mobile:**
+- **Category:** Food&Drink, Social Networking
+- **Mobile:** This app would be developed for mobile 
 - **Story:**
-- **Market:**
+- **Market:** College Students
 - **Habit:**
 - **Scope:**
 
@@ -26,22 +28,25 @@ A Social Media platform where friends get boba together.
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Users want to be able to create account for friends to refer to
+* Users want to contact other users via contact info
+* Users want app to suggest places to go
+* Users want app to manage bill payments
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Users able to fill reservations / order online
+* Users can use payment system integration like Venmo
+* Users can post about making new boba friends
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login Screen
+    * Users want to be able to create account for friends to refer to
+* Signup Screen
+    * Users want to be able to create account for friends to refer to
+* Restaurant List Screen
+    * Users want app to suggest places to go
 
 ### 3. Navigation
 
