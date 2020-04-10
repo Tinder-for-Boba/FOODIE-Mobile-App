@@ -1,7 +1,7 @@
 Group Project - README Template
 ===
 
-# Boba + Friends
+# BOND WITH BOBA
 
 ## Table of Contents
 1. [Overview](#Overview)
