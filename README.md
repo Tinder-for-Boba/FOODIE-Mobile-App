@@ -177,9 +177,12 @@ N/A
         - /get-restaurant-details
     - Food Preferences Screen
         - /submit-food-preferences
+
 - Basic snippets for each Parse network request
     - Sign in
-@IBAction func onSignIn(_ sender: Any) {
+
+```swift
+   @IBAction func onSignIn(_ sender: Any) {
 &nbsp; &nbsp; let username = usernameField.text!
 &nbsp; &nbsp; let password = passwordField.text!
 &nbsp; &nbsp;PFUser.logInWithUsername(inBackground: username, password: password){
@@ -191,7 +194,9 @@ N/A
 &nbsp;&nbsp;&nbsp;&nbsp;}
 &nbsp;&nbsp;}
 }
+```
     - Sign up
+```swift
     @IBAction func onSignIn(_ sender: Any) {
 &nbsp; &nbsp; let user = PFUser()
 &nbsp; &nbsp; let username = usernameField.text!
@@ -204,7 +209,7 @@ N/A
 &nbsp;&nbsp;&nbsp;&nbsp;}
 &nbsp;&nbsp;}
 }
-
+```
     ...more to be implemented.
 
 - Endpoints for Existing APIs:
