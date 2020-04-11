@@ -181,7 +181,6 @@ N/A
 - Basic snippets for each Parse network request
 
 ```swift
-    - Sign in
     
    @IBAction func onSignIn(_ sender: Any) {
       let username = usernameField.text!
@@ -195,9 +194,7 @@ N/A
             }
         }
    }
-```
-    - Sign up
-```swift
+
     @IBAction func onSignIn(_ sender: Any) {
       let user = PFUser()
       let username = usernameField.text!
