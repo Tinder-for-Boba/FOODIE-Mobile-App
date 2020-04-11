@@ -179,36 +179,36 @@ N/A
         - /submit-food-preferences
 
 - Basic snippets for each Parse network request
-    - Sign in
 
 ```swift
+    - Sign in
+    
    @IBAction func onSignIn(_ sender: Any) {
-&nbsp; &nbsp; let username = usernameField.text!
-&nbsp; &nbsp; let password = passwordField.text!
-&nbsp; &nbsp;PFUser.logInWithUsername(inBackground: username, password: password){
-&nbsp;&nbsp;&nbsp;&nbsp; (user, error) in
-&nbsp;&nbsp;&nbsp;&nbsp; if(user != nil) {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self.performSegue(withIdentifier: "loginSegue", sender: nil)
-&nbsp;&nbsp;&nbsp;&nbsp;} else{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Error: \(error?.localizedDescription)")
-&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;}
-}
+      let username = usernameField.text!
+      let password = passwordField.text!
+      PFUser.logInWithUsername(inBackground: username, password: password){
+         (user, error) in
+            if(user != nil) {
+               self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else{
+               print("Error: \(error?.localizedDescription)")
+            }
+        }
+   }
 ```
     - Sign up
 ```swift
     @IBAction func onSignIn(_ sender: Any) {
-&nbsp; &nbsp; let user = PFUser()
-&nbsp; &nbsp; let username = usernameField.text!
-&nbsp; &nbsp; let password = passwordField.text!
-&nbsp; &nbsp; user.signUpInBackground { (success, error) in
-&nbsp;&nbsp;&nbsp;&nbsp; if success{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self.performSegue(withIdentifier: "loginSegue", sender: nil)
-&nbsp;&nbsp;&nbsp;&nbsp;} else{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Error: \(error?.localizedDescription)")
-&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;}
-}
+      let user = PFUser()
+      let username = usernameField.text!
+      let password = passwordField.text!
+      user.signUpInBackground { (success, error) in
+         if success{
+            self.performSegue(withIdentifier: "loginSegue", sender: nil)} else{
+               print("Error: \(error?.localizedDescription)")
+            }
+         }
+    }
 ```
     ...more to be implemented.
 
