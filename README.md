@@ -1,4 +1,4 @@
-# FOODIE
+# FOODIE <3
 
 ## Table of Contents
 1. [Overview](#Overview)
