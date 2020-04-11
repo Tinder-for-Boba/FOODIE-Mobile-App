@@ -112,36 +112,41 @@ N/A
 
 ## Schema 
 
+```javascript
 {
-&nbsp;&nbsp; User: [
-&nbsp;&nbsp;&nbsp;&nbsp; {ID, Username: String, Password: String, Name: String, Email: String, Social Media: [String], Friends: [User.id], Preferences: [Cuisine.id], Location: JSON, Stories: [Story.id], LastActiveTime: Date, ChatRooms: [ChatRoom.id]}
-&nbsp;&nbsp;]
+   User: [
+      {ID, Username: String, Password: String, Name: String, Email: String, Social Media: [String], Friends: [User.id], Preferences: [Cuisine.id], Location: JSON, Stories: [Story.id], LastActiveTime: Date, ChatRooms: [ChatRoom.id]}
+   ]
 
-&nbsp;&nbsp; Restaurant: [
-&nbsp;&nbsp;&nbsp;&nbsp; {ID, Location: JSON, Style: Cuisine.id, Menu: JSON, Pictures: [Picture.id], Hours: String, Email: String, Phone: String}
-&nbsp;&nbsp;]
+   Restaurant: [
+      {ID, Location: JSON, Style: Cuisine.id, Menu: JSON, Pictures: [Picture.id], Hours: String, Email: String, Phone: String}
+   ]
 
-&nbsp;&nbsp; Cuisine: [
-&nbsp;&nbsp;&nbsp;&nbsp; {ID, Name: String}
-&nbsp;&nbsp;]
+   Cuisine: [
+      {ID, Name: String}
+   ]
 
-&nbsp;&nbsp; Picture: [
-&nbsp;&nbsp;&nbsp;&nbsp; {ID, Uri: String, Picture: Base64}
-&nbsp;&nbsp;]
-&nbsp;&nbsp; Story: [
-&nbsp;&nbsp;&nbsp;&nbsp; {ID, Creator: User.id, Participants: [User.id], Location: JSON, Title: String, Description: String, Pictures: [Picture.id], Likes: [User.id], Comments: [Comment.id]}
-&nbsp;&nbsp;]
-&nbsp;&nbsp; Comment: [
-&nbsp;&nbsp;&nbsp;&nbsp; {ID, User: User.id, Text: String}
-&nbsp;&nbsp;]
-&nbsp;&nbsp; ChatRoom: [
-&nbsp;&nbsp;&nbsp;&nbsp; {ID, Users: [User.id], Topic: String, Messages: [Message.id]} 
-&nbsp;&nbsp;]
-&nbsp;&nbsp; Message: [
-&nbsp;&nbsp;&nbsp;&nbsp; {	ID, Sender: [User.id], Text: String}
-&nbsp;&nbsp;]
+   Picture: [
+      {ID, Uri: String, Picture: Base64}
+   ]
 
+   Story: [
+      {ID, Creator: User.id, Participants: [User.id], Location: JSON, Title: String, Description: String, Pictures: [Picture.id], Likes: [User.id], Comments: [Comment.id]}
+   ]
+
+   Comment: [
+      {ID, User: User.id, Text: String}
+   ]
+
+   ChatRoom: [
+      {ID, Users: [User.id], Topic: String, Messages: [Message.id]} 
+   ]
+
+   Message: [
+      {ID, Sender: [User.id], Text: String}
+   ]
 }
+```
 
 ### Models
 | Model    | Structure    |
