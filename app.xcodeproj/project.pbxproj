@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A39CF74D244909DE008106E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39CF74C244909DE008106E9 /* GoogleService-Info.plist */; };
 		A3DB3DF224424F330014B591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB3DF124424F330014B591 /* AppDelegate.swift */; };
 		A3DB3DF424424F330014B591 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB3DF324424F330014B591 /* SceneDelegate.swift */; };
 		A3DB3DF624424F330014B591 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB3DF524424F330014B591 /* LoginViewController.swift */; };
@@ -19,6 +20,7 @@
 		2C16936B2258C902EFC84DCE /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
 		3DA4C9EA5EAC5A78239DB423 /* Pods-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.debug.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.debug.xcconfig"; sourceTree = "<group>"; };
 		4330B504DD62FEE46F7C1343 /* Pods_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39CF74C244909DE008106E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3DB3DEE24424F330014B591 /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DB3DF124424F330014B591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3DB3DF324424F330014B591 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				A3DB3DFA24424F380014B591 /* Assets.xcassets */,
 				A3DB3DFC24424F380014B591 /* LaunchScreen.storyboard */,
 				A3DB3DFF24424F380014B591 /* Info.plist */,
+				A39CF74C244909DE008106E9 /* GoogleService-Info.plist */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				A3DB3DFE24424F380014B591 /* LaunchScreen.storyboard in Resources */,
 				A3DB3DFB24424F380014B591 /* Assets.xcassets in Resources */,
+				A39CF74D244909DE008106E9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
