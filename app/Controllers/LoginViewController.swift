@@ -14,32 +14,35 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        let screenWidth = self.view.bounds.size.width
-        let screenHeight = self.view.bounds.size.height
-        
         view.configureLayout { (layout) in
-          layout.isEnabled = true
-          layout.width = YGValue(screenWidth)
-          layout.height = YGValue(screenHeight)
-        }
-        
-        let accountTextField: UITextField = UITextField()
-        accountTextField.backgroundColor = .gray
-        accountTextField.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.marginLeft = YGValue(screenWidth / 10)
-            layout.marginRight = YGValue(screenWidth / 10)
-            layout.marginTop = 200
-            layout.height = YGValue(screenHeight / 15)
-            layout.borderWidth = 1
+            layout.width = YGValue(ScreenConstants.width)
+            layout.height = YGValue(ScreenConstants.height)
         }
-        accountTextField.layer.cornerRadius = 3
         
-        view.addSubview(accountTextField)
+        let userTextField = UITextField()
+        let passwordTextField = UITextField()
+
+        userTextField.styleLogin()
+        passwordTextField.styleLogin()
+
+        view.addSubview(userTextField)
+        view.addSubview(passwordTextField)
         view.yoga.applyLayout(preservingOrigin: true)
     }
-
-
 }
 
+extension UITextField {
+    func styleLogin() {
+        self.backgroundColor = .gray
+        self.configureLayout { (layout) in
+            layout.isEnabled = true
+            layout.marginLeft = YGValue(ScreenConstants.width / 10)
+            layout.marginRight = YGValue(ScreenConstants.width / 10)
+            layout.marginTop = 50
+            layout.height = YGValue(ScreenConstants.height / 15)
+            layout.borderWidth = 1
+        }
+        self.layer.cornerRadius = 3
+    }
+}
