@@ -24,30 +24,11 @@ class LoginViewController: UIViewController {
         let userTextField = UITextField()
         let passwordTextField = UITextField()
 
-        userTextField.styleLogin()
-        passwordTextField.styleLogin()
+        userTextField.styleAuth()
+        passwordTextField.styleAuth()
 
         view.addSubview(userTextField)
         view.addSubview(passwordTextField)
         view.yoga.applyLayout(preservingOrigin: true)
-    }
-}
-
-extension UITextField {
-    func styleLogin() {
-        self.backgroundColor = .lightGray
-        self.configureLayout { (layout) in
-            layout.isEnabled = true
-            layout.marginLeft = YGValue(ScreenDimensions.width / 10)
-            layout.marginRight = YGValue(ScreenDimensions.width / 10)
-            layout.marginTop = 50
-            layout.height = YGValue(ScreenDimensions.height / 17.5)
-        }
-        self.layer.cornerRadius = 3
-        self.layer.borderWidth = 1
-        self.layer.borderColor = UIColor.black.cgColor
-        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: ScreenDimensions.width / 30, height: self.frame.height))
-        self.leftViewMode = .always
-        self.rightViewMode = .always
     }
 }
