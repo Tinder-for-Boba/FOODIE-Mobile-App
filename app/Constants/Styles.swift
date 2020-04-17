@@ -9,32 +9,6 @@
 import UIKit
 import YogaKit
 
-extension UIColor {
-    public convenience init?(hex: String) {
-        let r, g, b: CGFloat
-
-        if hex.hasPrefix("#") {
-            let start = hex.index(hex.startIndex, offsetBy: 1)
-            let hexColor = String(hex[start...])
-
-            if hexColor.count == 6 {
-                let scanner = Scanner(string: hexColor)
-                var hexNumber: UInt64 = 0
-
-                if scanner.scanHexInt64(&hexNumber) {
-                    r = CGFloat((hexNumber & 0xff0000) >> 16) / 255
-                    g = CGFloat((hexNumber & 0x00ff00) >> 8) / 255
-                    b = CGFloat(hexNumber & 0x0000ff) / 255
-                    self.init(red: r, green: g, blue: b, alpha: 1.0)
-                    return
-                }
-            }
-        }
-
-        return nil
-    }
-}
-
 extension UIImageView {
     func styleLoginLogo(safeAreaTop: CGFloat) {
         self.configureLayout { (layout) in
@@ -65,6 +39,19 @@ extension UITextField {
     }
 }
 
+extension UIView {
+    func styleLoginButtons() {
+        self.configureLayout{ (layout) in
+            layout.isEnabled = true
+            layout.marginTop = 40
+            layout.flexDirection = .row
+            layout.justifyContent = .spaceBetween
+            layout.paddingLeft = YGValue(ScreenDimensions.width / 10)
+            layout.paddingRight = YGValue(ScreenDimensions.width / 10)
+        }
+    }
+}
+
 extension UIButton {
     func styleAuth() {
         self.backgroundColor = AppColors.jIndigo
@@ -77,15 +64,28 @@ extension UIButton {
     }
 }
 
-extension UIView {
-    func styleLoginButtons() {
-        self.configureLayout{ (layout) in
-            layout.isEnabled = true
-            layout.marginTop = 40
-            layout.flexDirection = .row
-            layout.justifyContent = .spaceBetween
-            layout.paddingLeft = YGValue(ScreenDimensions.width / 10)
-            layout.paddingRight = YGValue(ScreenDimensions.width / 10)
+extension UIColor {
+    public convenience init?(hex: String) {
+        let r, g, b: CGFloat
+
+        if hex.hasPrefix("#") {
+            let start = hex.index(hex.startIndex, offsetBy: 1)
+            let hexColor = String(hex[start...])
+
+            if hexColor.count == 6 {
+                let scanner = Scanner(string: hexColor)
+                var hexNumber: UInt64 = 0
+
+                if scanner.scanHexInt64(&hexNumber) {
+                    r = CGFloat((hexNumber & 0xff0000) >> 16) / 255
+                    g = CGFloat((hexNumber & 0x00ff00) >> 8) / 255
+                    b = CGFloat(hexNumber & 0x0000ff) / 255
+                    self.init(red: r, green: g, blue: b, alpha: 1.0)
+                    return
+                }
+            }
         }
+
+        return nil
     }
 }
