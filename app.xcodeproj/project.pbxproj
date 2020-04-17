@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A39CF74D244909DE008106E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39CF74C244909DE008106E9 /* GoogleService-Info.plist */; };
-		A39CF753244918DC008106E9 /* ScreenConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CF752244918DC008106E9 /* ScreenConstants.swift */; };
+		A39CF753244918DC008106E9 /* ScreenDimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CF752244918DC008106E9 /* ScreenDimensions.swift */; };
+		A39CF7552449278E008106E9 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CF7542449278E008106E9 /* AppColors.swift */; };
 		A3DB3DF224424F330014B591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB3DF124424F330014B591 /* AppDelegate.swift */; };
 		A3DB3DF424424F330014B591 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB3DF324424F330014B591 /* SceneDelegate.swift */; };
 		A3DB3DF624424F330014B591 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB3DF524424F330014B591 /* LoginViewController.swift */; };
@@ -22,7 +23,8 @@
 		3DA4C9EA5EAC5A78239DB423 /* Pods-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.debug.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.debug.xcconfig"; sourceTree = "<group>"; };
 		4330B504DD62FEE46F7C1343 /* Pods_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39CF74C244909DE008106E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A39CF752244918DC008106E9 /* ScreenConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenConstants.swift; sourceTree = "<group>"; };
+		A39CF752244918DC008106E9 /* ScreenDimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDimensions.swift; sourceTree = "<group>"; };
+		A39CF7542449278E008106E9 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		A3DB3DEE24424F330014B591 /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DB3DF124424F330014B591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3DB3DF324424F330014B591 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +66,8 @@
 		A39CF751244918AF008106E9 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				A39CF752244918DC008106E9 /* ScreenConstants.swift */,
+				A39CF752244918DC008106E9 /* ScreenDimensions.swift */,
+				A39CF7542449278E008106E9 /* AppColors.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -226,7 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3DB3DF624424F330014B591 /* LoginViewController.swift in Sources */,
-				A39CF753244918DC008106E9 /* ScreenConstants.swift in Sources */,
+				A39CF7552449278E008106E9 /* AppColors.swift in Sources */,
+				A39CF753244918DC008106E9 /* ScreenDimensions.swift in Sources */,
 				A3DB3DF224424F330014B591 /* AppDelegate.swift in Sources */,
 				A3DB3DF424424F330014B591 /* SceneDelegate.swift in Sources */,
 			);

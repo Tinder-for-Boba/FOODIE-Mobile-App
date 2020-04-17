@@ -14,10 +14,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        view.backgroundColor = AppColors.hYellow
         view.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.width = YGValue(ScreenConstants.width)
-            layout.height = YGValue(ScreenConstants.height)
+            layout.width = YGValue(ScreenDimensions.width)
+            layout.height = YGValue(ScreenDimensions.height)
         }
         
         let userTextField = UITextField()
@@ -34,15 +35,19 @@ class LoginViewController: UIViewController {
 
 extension UITextField {
     func styleLogin() {
-        self.backgroundColor = .gray
+        self.backgroundColor = .lightGray
         self.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.marginLeft = YGValue(ScreenConstants.width / 10)
-            layout.marginRight = YGValue(ScreenConstants.width / 10)
+            layout.marginLeft = YGValue(ScreenDimensions.width / 10)
+            layout.marginRight = YGValue(ScreenDimensions.width / 10)
             layout.marginTop = 50
-            layout.height = YGValue(ScreenConstants.height / 15)
-            layout.borderWidth = 1
+            layout.height = YGValue(ScreenDimensions.height / 17.5)
         }
         self.layer.cornerRadius = 3
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.black.cgColor
+        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: ScreenDimensions.width / 30, height: self.frame.height))
+        self.leftViewMode = .always
+        self.rightViewMode = .always
     }
 }

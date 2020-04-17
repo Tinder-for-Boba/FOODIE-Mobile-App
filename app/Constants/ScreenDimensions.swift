@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum ScreenConstants {
+enum ScreenDimensions {
     static let width: CGFloat = UIScreen.main.bounds.width
     static let height: CGFloat = UIScreen.main.bounds.height
 }
