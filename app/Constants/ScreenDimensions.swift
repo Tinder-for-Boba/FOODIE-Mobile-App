@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ScreenDimensions.swift
 //  app
 //
 //  Created by Paul Pan on 20/4/16.
