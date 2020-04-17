@@ -35,6 +35,18 @@ extension UIColor {
     }
 }
 
+extension UIImageView {
+    func styleLoginLogo(safeAreaTop: CGFloat) {
+        self.configureLayout { (layout) in
+            layout.isEnabled = true
+            layout.marginTop = YGValue(safeAreaTop)
+            layout.height = YGValue(ScreenDimensions.height / 3)
+            layout.width = YGValue(ScreenDimensions.width)
+        }
+        self.contentMode = .scaleAspectFill
+    }
+}
+
 extension UITextField {
     func styleAuth() {
         self.backgroundColor = AppColors.hYellow
@@ -42,13 +54,12 @@ extension UITextField {
             layout.isEnabled = true
             layout.marginLeft = YGValue(ScreenDimensions.width / 10)
             layout.marginRight = YGValue(ScreenDimensions.width / 10)
-            layout.marginTop = 50
             layout.height = YGValue(ScreenDimensions.height / 17.5)
         }
         self.layer.cornerRadius = 3
         self.layer.borderWidth = 1
         self.layer.borderColor = UIColor.black.cgColor
-        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: ScreenDimensions.width / 30, height: self.frame.height))
+        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: ScreenDimensions.width / 40, height: self.frame.height))
         self.leftViewMode = .always
         self.rightViewMode = .always
     }
@@ -70,7 +81,7 @@ extension UIView {
     func styleLoginButtons() {
         self.configureLayout{ (layout) in
             layout.isEnabled = true
-            layout.marginTop = 50
+            layout.marginTop = 40
             layout.flexDirection = .row
             layout.justifyContent = .spaceBetween
             layout.paddingLeft = YGValue(ScreenDimensions.width / 10)
