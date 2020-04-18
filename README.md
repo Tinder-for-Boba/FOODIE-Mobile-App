@@ -2,7 +2,7 @@
 
 ## Current Progress
 
-![App Demo](ezgif-2-792cde6423f3.gif)
+<image src='ezgif-2-792cde6423f3.gif' width=340 />
 
 ## Table of Contents
 1. [Overview](#Overview)
