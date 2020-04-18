@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     }
     
     override func viewSafeAreaInsetsDidChange() {
-        view.backgroundColor = AppColors.sBrown
+        view.backgroundColor = AppColors.strawberry
         view.configureLayout { (layout) in
             layout.isEnabled = true
             layout.width = YGValue(ScreenDimensions.width)
@@ -53,5 +53,13 @@ class LoginViewController: UIViewController {
         loginButtonsView.addSubview(signupButton)
         view.addSubview(loginButtonsView)
         view.yoga.applyLayout(preservingOrigin: true)
+        
+        signupButton.addTarget(self, action: #selector(signupPressed(sender:)), for: .touchUpInside)
+    }
+    
+    @objc func signupPressed(sender: UIButton!) {
+        let signupViewController = SignupViewController()
+        signupViewController.modalPresentationStyle = .fullScreen
+        self.present(signupViewController, animated: true, completion: nil)
     }
 }

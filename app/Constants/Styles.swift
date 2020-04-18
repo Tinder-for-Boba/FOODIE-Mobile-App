@@ -15,22 +15,23 @@ extension UIImageView {
             layout.isEnabled = true
             layout.marginTop = YGValue(safeAreaTop)
             layout.height = YGValue(ScreenDimensions.height / 3)
-            layout.width = YGValue(ScreenDimensions.width)
+            layout.width = YGValue(ScreenDimensions.width / 1.5)
+            layout.alignSelf = .center
         }
-        self.contentMode = .scaleAspectFill
+        self.contentMode = .scaleAspectFit
     }
 }
 
 extension UITextField {
     func styleAuth() {
-        self.backgroundColor = AppColors.hYellow
+        self.backgroundColor = .white
         self.configureLayout { (layout) in
             layout.isEnabled = true
             layout.marginLeft = YGValue(ScreenDimensions.width / 10)
             layout.marginRight = YGValue(ScreenDimensions.width / 10)
             layout.height = YGValue(ScreenDimensions.height / 17.5)
         }
-        self.layer.cornerRadius = 3
+        self.layer.cornerRadius = 20
         self.layer.borderWidth = 1
         self.layer.borderColor = UIColor.black.cgColor
         self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: ScreenDimensions.width / 40, height: self.frame.height))
@@ -46,21 +47,21 @@ extension UIView {
             layout.marginTop = 40
             layout.flexDirection = .row
             layout.justifyContent = .spaceBetween
-            layout.paddingLeft = YGValue(ScreenDimensions.width / 10)
-            layout.paddingRight = YGValue(ScreenDimensions.width / 10)
+            layout.paddingLeft = YGValue(ScreenDimensions.width / 6)
+            layout.paddingRight = YGValue(ScreenDimensions.width / 6)
         }
     }
 }
 
 extension UIButton {
     func styleAuth() {
-        self.backgroundColor = AppColors.jIndigo
+        self.backgroundColor = .black
         self.configureLayout { (layout) in
             layout.isEnabled = true
             layout.width = YGValue(ScreenDimensions.width / 4)
             layout.height = YGValue(ScreenDimensions.height / 17.5)
         }
-        self.layer.cornerRadius = 3
+        self.layer.cornerRadius = 20
     }
 }
 

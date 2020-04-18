@@ -1,5 +1,7 @@
 # FOODIE <3
 
+![App Demo](ezgif-2-792cde6423f3.gif)
+
 ## Table of Contents
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)

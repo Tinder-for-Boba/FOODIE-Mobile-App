@@ -9,9 +9,11 @@
 import UIKit
 
 enum AppColors {
-    static let jIndigo: UIColor = UIColor(hex: "#264653")!
-    static let jGreen: UIColor = UIColor(hex: "#2A9D8F")!
-    static let hYellow: UIColor = UIColor(hex: "#E9C46A")!
-    static let sBrown: UIColor = UIColor(hex: "#F4A261")!
-    static let lRedOchre: UIColor = UIColor(hex: "#E76F51")!
+    static let color1: UIColor = UIColor(hex: "#33ADDC")!
+    static let color2: UIColor = UIColor(hex: "#5AC7EF")!
+    static let color3: UIColor = UIColor(hex: "#90E7DE")!
+    static let color4: UIColor = UIColor(hex: "#FFED29")!
+    static let color5: UIColor = UIColor(hex: "#FCBF30")!
+    static let color6: UIColor = UIColor(hex: "#EE5361")!
+    static let strawberry: UIColor = UIColor(hex: "#E83A3A")!
 }
