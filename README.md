@@ -43,7 +43,7 @@ Want a decent meal with your friends, but don't know where to meet up? Well look
 **Optional Nice-to-have Stories**
 
 - [ ] Users want to be able to make reservations and order food online
-- [ ]Users want to use an integrated payment system like Venmo
+- [ ] Users want to use an integrated payment system like Venmo
 
 ### 2. Screen Archetypes
 
