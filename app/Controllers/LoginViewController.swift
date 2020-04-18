@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  app
 //
 //  Created by Paul Pan on 20/4/11.
@@ -14,32 +14,52 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        let screenWidth = self.view.bounds.size.width
-        let screenHeight = self.view.bounds.size.height
-        
-        view.configureLayout { (layout) in
-          layout.isEnabled = true
-          layout.width = YGValue(screenWidth)
-          layout.height = YGValue(screenHeight)
-        }
-        
-        let accountTextField: UITextField = UITextField()
-        accountTextField.backgroundColor = .gray
-        accountTextField.configureLayout { (layout) in
-            layout.isEnabled = true
-            layout.marginLeft = YGValue(screenWidth / 10)
-            layout.marginRight = YGValue(screenWidth / 10)
-            layout.marginTop = 200
-            layout.height = YGValue(screenHeight / 15)
-            layout.borderWidth = 1
-        }
-        accountTextField.layer.cornerRadius = 3
-        
-        view.addSubview(accountTextField)
-        view.yoga.applyLayout(preservingOrigin: true)
+
     }
+    
+    override func viewSafeAreaInsetsDidChange() {
+        view.backgroundColor = AppColors.strawberry
+        view.configureLayout { (layout) in
+            layout.isEnabled = true
+            layout.width = YGValue(ScreenDimensions.width)
+            layout.height = YGValue(ScreenDimensions.height)
+        }
+        
+        let foodieLogo = UIImageView(image: UIImage(named: "FoodieLogo"))
+        let userTextField = UITextField()
+        let passwordTextField = UITextField()
+        let loginButtonsView = UIView()
+        let loginButton = UIButton()
+        let signupButton = UIButton()
+        
+        userTextField.placeholder = "Username"
+        passwordTextField.placeholder = "Password"
+        passwordTextField.isSecureTextEntry = true
+        passwordTextField.yoga.marginTop = 40
+        loginButton.setTitle("Login", for: .normal)
+        signupButton.setTitle("Signup", for: .normal)
 
+        foodieLogo.styleLoginLogo(safeAreaTop: view.safeAreaInsets.top)
+        userTextField.styleAuth()
+        passwordTextField.styleAuth()
+        loginButtonsView.styleLoginButtons()
+        loginButton.styleAuth()
+        signupButton.styleAuth()
 
+        view.addSubview(foodieLogo)
+        view.addSubview(userTextField)
+        view.addSubview(passwordTextField)
+        loginButtonsView.addSubview(loginButton)
+        loginButtonsView.addSubview(signupButton)
+        view.addSubview(loginButtonsView)
+        view.yoga.applyLayout(preservingOrigin: true)
+        
+        signupButton.addTarget(self, action: #selector(signupPressed(sender:)), for: .touchUpInside)
+    }
+    
+    @objc func signupPressed(sender: UIButton!) {
+        let signupViewController = SignupViewController()
+        signupViewController.modalPresentationStyle = .fullScreen
+        self.present(signupViewController, animated: true, completion: nil)
+    }
 }
-

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31461E4244AC03B00EF7A46 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31461E3244AC03B00EF7A46 /* SignupViewController.swift */; };
+		A337F9082449900C00F1C63D /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A337F9072449900C00F1C63D /* Styles.swift */; };
+		A39CF74D244909DE008106E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39CF74C244909DE008106E9 /* GoogleService-Info.plist */; };
+		A39CF753244918DC008106E9 /* ScreenDimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CF752244918DC008106E9 /* ScreenDimensions.swift */; };
+		A39CF7552449278E008106E9 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CF7542449278E008106E9 /* AppColors.swift */; };
 		A3DB3DF224424F330014B591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB3DF124424F330014B591 /* AppDelegate.swift */; };
 		A3DB3DF424424F330014B591 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB3DF324424F330014B591 /* SceneDelegate.swift */; };
 		A3DB3DF624424F330014B591 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB3DF524424F330014B591 /* LoginViewController.swift */; };
@@ -19,6 +24,11 @@
 		2C16936B2258C902EFC84DCE /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
 		3DA4C9EA5EAC5A78239DB423 /* Pods-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.debug.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.debug.xcconfig"; sourceTree = "<group>"; };
 		4330B504DD62FEE46F7C1343 /* Pods_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31461E3244AC03B00EF7A46 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		A337F9072449900C00F1C63D /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		A39CF74C244909DE008106E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A39CF752244918DC008106E9 /* ScreenDimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDimensions.swift; sourceTree = "<group>"; };
+		A39CF7542449278E008106E9 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		A3DB3DEE24424F330014B591 /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DB3DF124424F330014B591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3DB3DF324424F330014B591 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +67,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A39CF751244918AF008106E9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A39CF752244918DC008106E9 /* ScreenDimensions.swift */,
+				A39CF7542449278E008106E9 /* AppColors.swift */,
+				A337F9072449900C00F1C63D /* Styles.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		A3DB3DE524424F330014B591 = {
 			isa = PBXGroup;
 			children = (
@@ -78,12 +98,14 @@
 		A3DB3DF024424F330014B591 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				A39CF751244918AF008106E9 /* Constants */,
 				A3DB3E052442598C0014B591 /* Controllers */,
 				A3DB3DF124424F330014B591 /* AppDelegate.swift */,
 				A3DB3DF324424F330014B591 /* SceneDelegate.swift */,
 				A3DB3DFA24424F380014B591 /* Assets.xcassets */,
 				A3DB3DFC24424F380014B591 /* LaunchScreen.storyboard */,
 				A3DB3DFF24424F380014B591 /* Info.plist */,
+				A39CF74C244909DE008106E9 /* GoogleService-Info.plist */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -92,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				A3DB3DF524424F330014B591 /* LoginViewController.swift */,
+				A31461E3244AC03B00EF7A46 /* SignupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -158,6 +181,7 @@
 			files = (
 				A3DB3DFE24424F380014B591 /* LaunchScreen.storyboard in Resources */,
 				A3DB3DFB24424F380014B591 /* Assets.xcassets in Resources */,
+				A39CF74D244909DE008106E9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3DB3DF624424F330014B591 /* LoginViewController.swift in Sources */,
+				A31461E4244AC03B00EF7A46 /* SignupViewController.swift in Sources */,
+				A337F9082449900C00F1C63D /* Styles.swift in Sources */,
+				A39CF7552449278E008106E9 /* AppColors.swift in Sources */,
+				A39CF753244918DC008106E9 /* ScreenDimensions.swift in Sources */,
 				A3DB3DF224424F330014B591 /* AppDelegate.swift in Sources */,
 				A3DB3DF424424F330014B591 /* SceneDelegate.swift in Sources */,
 			);
