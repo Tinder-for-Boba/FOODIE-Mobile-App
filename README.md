@@ -29,16 +29,16 @@ Want a decent meal with your friends, but don't know where to meet up? Well look
 
 **Required Must-have Stories**
 
-[x] Users want to be able to create an account to access all the app's features
-[x] Users want to be able to login to the app to see its features
-[ ] Users want to contact other users
-[ ] Users want to be recommended friends who share similar food tastes
-[ ] Users want to post videos or photos of their food-related hangouts
-[ ] Users want to be recommended restaurants based on location and food preferences
-[ ] Users want to view details about a restaurant in order to learn about their menu and quality
-[ ] Users want to create a profile that displays their personality
-[ ] Users want to view videos/photos of their friend's hangouts
-[ ] Users want to be able to submit their food preferences
+- [x] Users want to be able to create an account to access all the app's features
+- [x] Users want to be able to login to the app to see its features
+- [ ] Users want to contact other users
+- [ ] Users want to be recommended friends who share similar food tastes
+- [ ] Users want to post videos or photos of their food-related hangouts
+- [ ] Users want to be recommended restaurants based on location and food preferences
+- [ ] Users want to view details about a restaurant in order to learn about their menu and quality
+- [ ] Users want to create a profile that displays their personality
+- [ ] Users want to view videos/photos of their friend's hangouts
+- [ ] Users want to be able to submit their food preferences
 
 **Optional Nice-to-have Stories**
 
