@@ -108,7 +108,7 @@ Want a decent meal with your friends, but don't know where to meet up? Well look
 
 ### [BONUS] Interactive Prototype
 
-N/A
+![](http://g.recordit.co/HvrSY3OnYg.gif)
 
 ## Schema 
 
