@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		12DF68F0244BA46A002616F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12DF68EF244BA46A002616F6 /* GoogleService-Info.plist */; };
 		12F45DF6245214A1000BB2A7 /* PreferenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DF5245214A1000BB2A7 /* PreferenceTableViewCell.swift */; };
+		12F45DF82452155E000BB2A7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DF72452155E000BB2A7 /* HomeTableViewController.swift */; };
+		12F45DFA24521578000BB2A7 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DF924521578000BB2A7 /* FriendsTableViewController.swift */; };
+		12F45DFC2452158D000BB2A7 /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DFB2452158D000BB2A7 /* RestaurantsTableViewController.swift */; };
+		12F45DFE245215A6000BB2A7 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DFD245215A6000BB2A7 /* MyProfileViewController.swift */; };
+		12F45E00245215C0000BB2A7 /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DFF245215C0000BB2A7 /* RestaurantDetailsViewController.swift */; };
+		12F45E022452161B000BB2A7 /* AddStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45E012452161B000BB2A7 /* AddStoryViewController.swift */; };
+		12F45E042452162C000BB2A7 /* FriendProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45E032452162C000BB2A7 /* FriendProfileViewController.swift */; };
+		12F45E062452164E000BB2A7 /* Restaurant2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45E052452164E000BB2A7 /* Restaurant2TableViewController.swift */; };
 		2E905D1B23FDDDE66F1D20A7 /* Pods_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47F052B0F489187EE74DB07 /* Pods_app.framework */; };
 		A31461E4244AC03B00EF7A46 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31461E3244AC03B00EF7A46 /* SignupViewController.swift */; };
 		A337F9082449900C00F1C63D /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A337F9072449900C00F1C63D /* Styles.swift */; };
@@ -24,6 +32,14 @@
 /* Begin PBXFileReference section */
 		12DF68EF244BA46A002616F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		12F45DF5245214A1000BB2A7 /* PreferenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceTableViewCell.swift; sourceTree = "<group>"; };
+		12F45DF72452155E000BB2A7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		12F45DF924521578000BB2A7 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		12F45DFB2452158D000BB2A7 /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
+		12F45DFD245215A6000BB2A7 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		12F45DFF245215C0000BB2A7 /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
+		12F45E012452161B000BB2A7 /* AddStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStoryViewController.swift; sourceTree = "<group>"; };
+		12F45E032452162C000BB2A7 /* FriendProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileViewController.swift; sourceTree = "<group>"; };
+		12F45E052452164E000BB2A7 /* Restaurant2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant2TableViewController.swift; sourceTree = "<group>"; };
 		144E8F897E3FB090708353E4 /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
 		A31461E3244AC03B00EF7A46 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A337F9072449900C00F1C63D /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
@@ -118,6 +134,14 @@
 				A3DB3DF524424F330014B591 /* LoginViewController.swift */,
 				A31461E3244AC03B00EF7A46 /* SignupViewController.swift */,
 				12F45DF5245214A1000BB2A7 /* PreferenceTableViewCell.swift */,
+				12F45DF72452155E000BB2A7 /* HomeTableViewController.swift */,
+				12F45DF924521578000BB2A7 /* FriendsTableViewController.swift */,
+				12F45DFB2452158D000BB2A7 /* RestaurantsTableViewController.swift */,
+				12F45DFD245215A6000BB2A7 /* MyProfileViewController.swift */,
+				12F45DFF245215C0000BB2A7 /* RestaurantDetailsViewController.swift */,
+				12F45E012452161B000BB2A7 /* AddStoryViewController.swift */,
+				12F45E032452162C000BB2A7 /* FriendProfileViewController.swift */,
+				12F45E052452164E000BB2A7 /* Restaurant2TableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -237,12 +261,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F45E042452162C000BB2A7 /* FriendProfileViewController.swift in Sources */,
+				12F45E062452164E000BB2A7 /* Restaurant2TableViewController.swift in Sources */,
+				12F45E022452161B000BB2A7 /* AddStoryViewController.swift in Sources */,
 				A3DB3DF624424F330014B591 /* LoginViewController.swift in Sources */,
+				12F45DFC2452158D000BB2A7 /* RestaurantsTableViewController.swift in Sources */,
 				A31461E4244AC03B00EF7A46 /* SignupViewController.swift in Sources */,
 				12F45DF6245214A1000BB2A7 /* PreferenceTableViewCell.swift in Sources */,
 				A337F9082449900C00F1C63D /* Styles.swift in Sources */,
+				12F45E00245215C0000BB2A7 /* RestaurantDetailsViewController.swift in Sources */,
+				12F45DFA24521578000BB2A7 /* FriendsTableViewController.swift in Sources */,
+				12F45DFE245215A6000BB2A7 /* MyProfileViewController.swift in Sources */,
 				A39CF7552449278E008106E9 /* AppColors.swift in Sources */,
 				A39CF753244918DC008106E9 /* ScreenDimensions.swift in Sources */,
+				12F45DF82452155E000BB2A7 /* HomeTableViewController.swift in Sources */,
 				A3DB3DF224424F330014B591 /* AppDelegate.swift in Sources */,
 				A3DB3DF424424F330014B591 /* SceneDelegate.swift in Sources */,
 			);
