@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6916B3AE24516C3A003AF959 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6916B3AD24516C3A003AF959 /* Extensions.swift */; };
 		12DF68F0244BA46A002616F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12DF68EF244BA46A002616F6 /* GoogleService-Info.plist */; };
 		12F45DF6245214A1000BB2A7 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DF5245214A1000BB2A7 /* RestaurantTableViewCell.swift */; };
 		12F45DF82452155E000BB2A7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DF72452155E000BB2A7 /* HomeTableViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6916B3AD24516C3A003AF959 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		12DF68EF244BA46A002616F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		12F45DF5245214A1000BB2A7 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		12F45DF72452155E000BB2A7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				A39CF752244918DC008106E9 /* ScreenDimensions.swift */,
 				A39CF7542449278E008106E9 /* AppColors.swift */,
 				A337F9072449900C00F1C63D /* Styles.swift */,
+				6916B3AD24516C3A003AF959 /* Extensions.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				A31461E4244AC03B00EF7A46 /* SignupViewController.swift in Sources */,
 				12F45DF6245214A1000BB2A7 /* RestaurantTableViewCell.swift in Sources */,
 				A337F9082449900C00F1C63D /* Styles.swift in Sources */,
+				6916B3AE24516C3A003AF959 /* Extensions.swift in Sources */,
 				12F45E00245215C0000BB2A7 /* RestaurantDetailsViewController.swift in Sources */,
 				12F45DFA24521578000BB2A7 /* FriendsTableViewController.swift in Sources */,
 				12F45DFE245215A6000BB2A7 /* MyProfileViewController.swift in Sources */,

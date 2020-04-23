@@ -50,6 +50,7 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - SwiftSVG (2.3.2)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -57,6 +58,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - IGListKit (~> 4.0.0)
+  - SwiftSVG (~> 2.0)
   - YogaKit (~> 1.7)
 
 SPEC REPOS:
@@ -74,6 +76,7 @@ SPEC REPOS:
     - IGListDiffKit
     - IGListKit
     - nanopb
+    - SwiftSVG
     - Yoga
     - YogaKit
 
@@ -91,9 +94,10 @@ SPEC CHECKSUMS:
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  SwiftSVG: ca7f64e403b8ea7ea8eba8c823b83ba4a059834c
   Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 9430b7328708e74c5a2659be1933b80a86027fa4
+PODFILE CHECKSUM: 5642a1fb97566ec3c183ebc14984bb2c23ba39ae
 
 COCOAPODS: 1.9.1
