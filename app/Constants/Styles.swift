@@ -87,3 +87,14 @@ extension UIButton {
         }
     }
 }
+
+extension UIViewController {
+    func styleAuthViewController() {
+        view.backgroundColor = AppColors.strawberry
+        view.configureLayout { (layout) in
+            layout.isEnabled = true
+            layout.width = YGValue(ScreenDimensions.width)
+            layout.height = YGValue(ScreenDimensions.height)
+        }
+    }
+}
