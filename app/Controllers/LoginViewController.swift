@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
         let foodieLogo = UIImageView(image: UIImage(named: "FoodieLogo"))
         let userTextField = UITextField()
         let passwordTextField = UITextField()
-        let loginButtonsView = UIView()
+        let loginButtonsView = LoginButtonsView()
         let loginButton = UIButton()
         let signupButton = UIButton()
         

@@ -45,7 +45,7 @@ extension UITextField {
     }
 }
 
-extension UIView {
+class LoginButtonsView: UIView {
     func styleLoginButtons() {
         self.configureLayout{ (layout) in
             layout.isEnabled = true
