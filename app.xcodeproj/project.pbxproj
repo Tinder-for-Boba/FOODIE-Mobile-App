@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12DF68F0244BA46A002616F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12DF68EF244BA46A002616F6 /* GoogleService-Info.plist */; };
-		12F45DF6245214A1000BB2A7 /* PreferenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DF5245214A1000BB2A7 /* PreferenceTableViewCell.swift */; };
+		12F45DF6245214A1000BB2A7 /* RestaurantsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DF5245214A1000BB2A7 /* RestaurantsTableViewCell.swift */; };
 		12F45DF82452155E000BB2A7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DF72452155E000BB2A7 /* HomeTableViewController.swift */; };
 		12F45DFA24521578000BB2A7 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DF924521578000BB2A7 /* FriendsTableViewController.swift */; };
 		12F45DFC2452158D000BB2A7 /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DFB2452158D000BB2A7 /* RestaurantsTableViewController.swift */; };
@@ -31,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		12DF68EF244BA46A002616F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		12F45DF5245214A1000BB2A7 /* PreferenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceTableViewCell.swift; sourceTree = "<group>"; };
+		12F45DF5245214A1000BB2A7 /* RestaurantsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewCell.swift; sourceTree = "<group>"; };
 		12F45DF72452155E000BB2A7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		12F45DF924521578000BB2A7 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		12F45DFB2452158D000BB2A7 /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 			children = (
 				A3DB3DF524424F330014B591 /* LoginViewController.swift */,
 				A31461E3244AC03B00EF7A46 /* SignupViewController.swift */,
-				12F45DF5245214A1000BB2A7 /* PreferenceTableViewCell.swift */,
+				12F45DF5245214A1000BB2A7 /* RestaurantsTableViewCell.swift */,
 				12F45DF72452155E000BB2A7 /* HomeTableViewController.swift */,
 				12F45DF924521578000BB2A7 /* FriendsTableViewController.swift */,
 				12F45DFB2452158D000BB2A7 /* RestaurantsTableViewController.swift */,
@@ -267,7 +267,7 @@
 				A3DB3DF624424F330014B591 /* LoginViewController.swift in Sources */,
 				12F45DFC2452158D000BB2A7 /* RestaurantsTableViewController.swift in Sources */,
 				A31461E4244AC03B00EF7A46 /* SignupViewController.swift in Sources */,
-				12F45DF6245214A1000BB2A7 /* PreferenceTableViewCell.swift in Sources */,
+				12F45DF6245214A1000BB2A7 /* RestaurantsTableViewCell.swift in Sources */,
 				A337F9082449900C00F1C63D /* Styles.swift in Sources */,
 				12F45E00245215C0000BB2A7 /* RestaurantDetailsViewController.swift in Sources */,
 				12F45DFA24521578000BB2A7 /* FriendsTableViewController.swift in Sources */,

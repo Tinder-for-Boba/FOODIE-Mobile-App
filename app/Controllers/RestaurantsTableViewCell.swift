@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PreferenceTableViewCell: UITableViewCell {
+class RestaurantsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
