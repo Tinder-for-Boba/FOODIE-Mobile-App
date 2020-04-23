@@ -55,11 +55,20 @@ class LoginViewController: UIViewController {
         view.yoga.applyLayout(preservingOrigin: true)
         
         signupButton.addTarget(self, action: #selector(signupPressed(sender:)), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginPressed(sender:)), for: .touchUpInside)
     }
     
     @objc func signupPressed(sender: UIButton!) {
         let signupViewController = SignupViewController()
         signupViewController.modalPresentationStyle = .fullScreen
         self.present(signupViewController, animated: true, completion: nil)
+    }
+    
+    @objc func loginPressed(sender: UIButton!) {
+        //let restaurantTableViewCell = RestaurantTableViewCell()
+        let preferencesTableViewController = PreferencesTableViewController()
+        let preferenceNavigator = UINavigationController(rootViewController: preferencesTableViewController)
+        preferenceNavigator.modalPresentationStyle = .overFullScreen
+        self.present(preferenceNavigator, animated: true, completion: nil)
     }
 }
