@@ -53,6 +53,12 @@ class LoginViewController: UIViewController {
         button.addTarget(self, action: #selector(signupPressed(sender:)), for: .touchUpInside)
         return button
     }()
+    
+    lazy var signupViewController: SignupViewController = {
+        let viewController = SignupViewController()
+        viewController.modalPresentationStyle = .fullScreen
+        return viewController
+    }()
 
     override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
@@ -76,8 +82,6 @@ class LoginViewController: UIViewController {
     }
     
     @objc func signupPressed(sender: UIButton!) {
-        let signupViewController = SignupViewController()
-        signupViewController.modalPresentationStyle = .fullScreen
         self.present(signupViewController, animated: true, completion: nil)
     }
 
