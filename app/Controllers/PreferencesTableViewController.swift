@@ -1,14 +1,14 @@
 //
-//  Restaurant2TableViewController.swift
+//  PreferencesTableViewController.swift
 //  app
 //
-//  Created by Soyon Kim on 4/23/20.
+//  Created by Luhao Wang on 4/23/20.
 //  Copyright © 2020 Foodie Inc. All rights reserved.
 //
 
 import UIKit
 
-class Restaurant2TableViewController: UITableViewController {
+class PreferencesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
