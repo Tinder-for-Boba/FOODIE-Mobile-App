@@ -59,6 +59,12 @@ class LoginViewController: UIViewController {
         viewController.modalPresentationStyle = .fullScreen
         return viewController
     }()
+    lazy var preferenceNavigator: UINavigationController = {
+        let preferencesTableViewController = PreferencesTableViewController()
+        let navigationController = UINavigationController(rootViewController: preferencesTableViewController)
+        navigationController.modalPresentationStyle = .overFullScreen
+        return navigationController
+    }()
 
     override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
@@ -78,11 +84,10 @@ class LoginViewController: UIViewController {
     }
 
     @objc func loginPressed(sender: UIButton!) {
-        
+        self.present(preferenceNavigator, animated: true, completion: nil)
     }
-    
+
     @objc func signupPressed(sender: UIButton!) {
         self.present(signupViewController, animated: true, completion: nil)
     }
-
 }
