@@ -31,7 +31,7 @@ extension UITextField {
         self.backgroundColor = .white
         self.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.marginTop = YGValue(authMarginBetween)
+            layout.marginBottom = YGValue(authMarginBetween)
             layout.marginLeft = YGValue(ScreenDimensions.width / 10)
             layout.marginRight = YGValue(ScreenDimensions.width / 10)
             layout.height = YGValue(ScreenDimensions.height / 17.5)
@@ -49,7 +49,6 @@ extension UIView {
     func styleLoginButtons() {
         self.configureLayout{ (layout) in
             layout.isEnabled = true
-            layout.marginTop = YGValue(authMarginBetween)
             layout.flexDirection = .row
             layout.justifyContent = .spaceBetween
             layout.paddingLeft = YGValue(ScreenDimensions.width / 6)
@@ -83,7 +82,6 @@ extension UIButton {
         styleAuth()
         self.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.marginTop = YGValue(authMarginBetween)
             layout.alignSelf = .center
             layout.width = YGValue(ScreenDimensions.width / 2)
         }
