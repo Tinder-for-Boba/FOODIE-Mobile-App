@@ -90,3 +90,9 @@ extension UIColor {
         return nil
     }
 }
+
+extension UITableViewCell {
+    func styleAuth() {
+        self.backgroundColor = .black
+    }
+}
