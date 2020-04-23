@@ -8,6 +8,7 @@
 
 import UIKit
 import YogaKit
+import SwiftSVG
 
 class SignupViewController: UIViewController {
 
@@ -25,36 +26,24 @@ class SignupViewController: UIViewController {
             layout.width = YGValue(ScreenDimensions.width)
             layout.height = YGValue(ScreenDimensions.height)
         }
-        let backButton = UIButton(type: .close)
+        let backButton = UIButton(SVGNamed: "BackButton")
         let usernameTextField = UITextField()
         let emailTextField = UITextField()
         let passwordTextField = UITextField()
         let signupButton = UIButton()
-                
+
+        backButton.styleSignupBack(safeAreaTop: view.safeAreaInsets.top)
         usernameTextField.styleAuth()
         emailTextField.styleAuth()
         passwordTextField.styleAuth()
-        signupButton.styleAuth()
+        signupButton.styleSignupButton()
         
         usernameTextField.placeholder = "Username"
         emailTextField.placeholder = "Email"
         passwordTextField.placeholder = "Password"
         passwordTextField.isSecureTextEntry = true
         signupButton.setTitle("Create an account", for: .normal)
-        
-        usernameTextField.yoga.marginTop = 40
-        emailTextField.yoga.marginTop = 40
-        passwordTextField.yoga.marginTop = 40
-        signupButton.yoga.marginTop = 40
-        signupButton.yoga.alignSelf = .center
-        signupButton.yoga.width = YGValue(ScreenDimensions.width / 2)
-        
-        backButton.configureLayout { (layout) in
-            layout.isEnabled = true
-            layout.height = YGValue(ScreenDimensions.width / 5)
-            layout.marginTop = YGValue(self.view.safeAreaInsets.top)
-            layout.width = YGValue(ScreenDimensions.width / 5)
-        }
+
         
         view.addSubview(backButton)
         view.addSubview(usernameTextField)

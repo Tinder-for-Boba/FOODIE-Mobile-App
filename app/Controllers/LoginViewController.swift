@@ -35,7 +35,6 @@ class LoginViewController: UIViewController {
         userTextField.placeholder = "Username"
         passwordTextField.placeholder = "Password"
         passwordTextField.isSecureTextEntry = true
-        passwordTextField.yoga.marginTop = 40
         loginButton.setTitle("Login", for: .normal)
         signupButton.setTitle("Signup", for: .normal)
 
