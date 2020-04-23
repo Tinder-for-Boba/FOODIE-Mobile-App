@@ -20,6 +20,7 @@ class SignupViewController: UIViewController {
     }
     
     override func viewSafeAreaInsetsDidChange() {
+        hideKeyboardWhenTappedAround()
         view.backgroundColor = AppColors.strawberry
         view.configureLayout { (layout) in
             layout.isEnabled = true
