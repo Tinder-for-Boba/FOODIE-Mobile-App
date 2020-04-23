@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E897D7F2452167200B4A1B4 /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E897D7E2452167200B4A1B4 /* BottomTabBar.swift */; };
 		A31461E4244AC03B00EF7A46 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31461E3244AC03B00EF7A46 /* SignupViewController.swift */; };
 		A337F9082449900C00F1C63D /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A337F9072449900C00F1C63D /* Styles.swift */; };
 		A39CF74D244909DE008106E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39CF74C244909DE008106E9 /* GoogleService-Info.plist */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E897D7E2452167200B4A1B4 /* BottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBar.swift; sourceTree = "<group>"; };
 		2C16936B2258C902EFC84DCE /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
 		3DA4C9EA5EAC5A78239DB423 /* Pods-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.debug.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.debug.xcconfig"; sourceTree = "<group>"; };
 		4330B504DD62FEE46F7C1343 /* Pods_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 			children = (
 				A3DB3DF524424F330014B591 /* LoginViewController.swift */,
 				A31461E3244AC03B00EF7A46 /* SignupViewController.swift */,
+				1E897D7E2452167200B4A1B4 /* BottomTabBar.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				A39CF7552449278E008106E9 /* AppColors.swift in Sources */,
 				A39CF753244918DC008106E9 /* ScreenDimensions.swift in Sources */,
 				A3DB3DF224424F330014B591 /* AppDelegate.swift in Sources */,
+				1E897D7F2452167200B4A1B4 /* BottomTabBar.swift in Sources */,
 				A3DB3DF424424F330014B591 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
