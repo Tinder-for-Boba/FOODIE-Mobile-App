@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12DF68F0244BA46A002616F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12DF68EF244BA46A002616F6 /* GoogleService-Info.plist */; };
+		12F45DF6245214A1000BB2A7 /* PreferenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45DF5245214A1000BB2A7 /* PreferenceTableViewCell.swift */; };
 		2E905D1B23FDDDE66F1D20A7 /* Pods_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47F052B0F489187EE74DB07 /* Pods_app.framework */; };
 		A31461E4244AC03B00EF7A46 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31461E3244AC03B00EF7A46 /* SignupViewController.swift */; };
 		A337F9082449900C00F1C63D /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A337F9072449900C00F1C63D /* Styles.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		12DF68EF244BA46A002616F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		12F45DF5245214A1000BB2A7 /* PreferenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceTableViewCell.swift; sourceTree = "<group>"; };
 		144E8F897E3FB090708353E4 /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
 		A31461E3244AC03B00EF7A46 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A337F9072449900C00F1C63D /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				A3DB3DF524424F330014B591 /* LoginViewController.swift */,
 				A31461E3244AC03B00EF7A46 /* SignupViewController.swift */,
+				12F45DF5245214A1000BB2A7 /* PreferenceTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			files = (
 				A3DB3DF624424F330014B591 /* LoginViewController.swift in Sources */,
 				A31461E4244AC03B00EF7A46 /* SignupViewController.swift in Sources */,
+				12F45DF6245214A1000BB2A7 /* PreferenceTableViewCell.swift in Sources */,
 				A337F9082449900C00F1C63D /* Styles.swift in Sources */,
 				A39CF7552449278E008106E9 /* AppColors.swift in Sources */,
 				A39CF753244918DC008106E9 /* ScreenDimensions.swift in Sources */,
