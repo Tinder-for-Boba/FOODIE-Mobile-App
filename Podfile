@@ -6,6 +6,7 @@ target 'app' do
   use_frameworks!
 
   # Pods for app
+  pod 'SwiftSVG', '~> 2.0'
   pod 'YogaKit', '~> 1.7'
   pod 'IGListKit', '~> 4.0.0'
   pod 'Firebase/Auth'
