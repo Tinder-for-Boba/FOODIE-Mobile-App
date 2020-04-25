@@ -12,6 +12,9 @@ class FriendsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.white
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Friends"
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
