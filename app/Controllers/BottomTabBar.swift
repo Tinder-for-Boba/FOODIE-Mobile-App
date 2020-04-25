@@ -8,32 +8,36 @@
 
 import UIKit
 
-class BottomTabBar: UITabBarController, UITabBarControllerDelegate {
+class BottomTabBar: UITabBarController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        delegate = self
+        
+        tabBar.barTintColor = UIColor(red: 125/255, green: 138/255, blue: 140/255, alpha: 1)
+        setupTabBar()
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        let item1 = HomeTableViewController()
-        let icon1 = UITabBarItem(title: "Home", image: UIImage(named: "Home"), tag: 1)
-        let item2 = FriendsTableViewController()
-        let icon2 = UITabBarItem(title: "Friends", image: UIImage(named: "Contacts"), tag: 2)
-        let item3 = RestaurantsTableViewController()
-        let icon3 = UITabBarItem(title: "Restaurants", image: UIImage(named: "Bookmarks"), tag: 1)
-        let item4 = MyProfileViewController()
-        let icon4 = UITabBarItem(title: "MyProfile", image: UIImage(named: "Love"), tag: 1)
-        let controllers = [item1, item2, item3, item4]
-        self.viewControllers = controllers
-        self.selectedIndex = 0
-    }
-    
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        print("Should select viewController: \(viewController.title ?? "") ?")
-        return true;
+    func setupTabBar() {
+        
+        // Create Home Tab
+        let homeController = UINavigationController(rootViewController: HomeTableViewController())
+        homeController.tabBarItem.image = UIImage(named: "Home")
+        homeController.tabBarItem.selectedImage = UIImage(named: "Home")
+        // Create Friends Tab
+        let friendsController = UINavigationController(rootViewController: FriendsTableViewController())
+        friendsController.tabBarItem.image = UIImage(named: "Contacts")
+        friendsController.tabBarItem.selectedImage = UIImage(named: "Contacts")
+        // Create Restaurants Tab
+        let restaurantController = UINavigationController(rootViewController: RestaurantsTableViewController())
+        restaurantController.tabBarItem.image = UIImage(named: "Bookmarks")
+        restaurantController.tabBarItem.selectedImage = UIImage(named: "Bookmarks")
+        // Create MyProfile Tab
+        let myprofileController = UINavigationController(rootViewController: MyProfileViewController())
+        myprofileController.tabBarItem.image = UIImage(named: "Love")
+        myprofileController.tabBarItem.selectedImage = UIImage(named: "Love")
+        
+        viewControllers = [homeController, friendsController, restaurantController, myprofileController]
     }
     
 
@@ -47,4 +51,21 @@ class BottomTabBar: UITabBarController, UITabBarControllerDelegate {
     }
     */
 
+}
+
+extension UITabBarController {
+    func createNavController(vc: UIViewController, selected: UIImage, unselected: UIImage) -> UINavigationController{
+        let viewController = vc
+        let navController = UINavigationController(rootViewController: viewController)
+        navController.tabBarItem.image = unselected
+        navController.tabBarItem.selectedImage = selected
+        return navController
+    }
+    func createTableNavController(tvc: UITableViewController, selected: UIImage, unselected: UIImage) -> UINavigationController{
+        let tableViewController = tvc
+        let navController = UINavigationController(rootViewController: tableViewController)
+        navController.tabBarItem.image = unselected
+        navController.tabBarItem.selectedImage = selected
+        return navController
+    }
 }

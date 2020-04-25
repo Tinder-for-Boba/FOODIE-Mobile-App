@@ -66,7 +66,8 @@ class LoginViewController: UIViewController {
     
     @objc func loginPressed(sender: UIButton!) {
         //let restaurantTableViewCell = RestaurantTableViewCell()
-        let preferencesTableViewController = PreferencesTableViewController()
+        
+        let preferencesTableViewController = BottomTabBar()
         let preferenceNavigator = UINavigationController(rootViewController: preferencesTableViewController)
         preferenceNavigator.modalPresentationStyle = .overFullScreen
         self.present(preferenceNavigator, animated: true, completion: nil)
