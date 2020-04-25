@@ -59,6 +59,7 @@ class LoginViewController: UIViewController {
         viewController.modalPresentationStyle = .fullScreen
         return viewController
     }()
+    
     lazy var preferenceNavigator: UINavigationController = {
         let preferencesTableViewController = PreferencesTableViewController()
         let navigationController = UINavigationController(rootViewController: preferencesTableViewController)
@@ -85,10 +86,6 @@ class LoginViewController: UIViewController {
 
     @objc func loginPressed(sender: UIButton!) {
         //let restaurantTableViewCell = RestaurantTableViewCell()
-        
-        let preferencesTableViewController = BottomTabBar()
-        let preferenceNavigator = UINavigationController(rootViewController: preferencesTableViewController)
-        preferenceNavigator.modalPresentationStyle = .overFullScreen
         self.present(preferenceNavigator, animated: true, completion: nil)
     }
 

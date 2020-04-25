@@ -2,7 +2,7 @@
 
 ## Current Progress
 
-<image src='ezgif-2-792cde6423f3.gif' width=340 />
+<image src='http://g.recordit.co/e5viU7FBO0.gif' width=340 />
 
 ## Table of Contents
 1. [Overview](#Overview)
