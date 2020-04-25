@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BottomTabBar: UITabBarController{
+class BottomTabBarController: UITabBarController{
 
     override func viewDidLoad() {
         super.viewDidLoad()

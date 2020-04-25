@@ -61,8 +61,8 @@ class LoginViewController: UIViewController {
     }()
     
     lazy var preferenceNavigator: UINavigationController = {
-        let preferencesTableViewController = PreferencesTableViewController()
-        let navigationController = UINavigationController(rootViewController: preferencesTableViewController)
+        let bottomTabBarController = BottomTabBarController()
+        let navigationController = UINavigationController(rootViewController: bottomTabBarController)
         navigationController.modalPresentationStyle = .overFullScreen
         return navigationController
     }()

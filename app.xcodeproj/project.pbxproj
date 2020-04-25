@@ -16,7 +16,7 @@
 		12F45E022452161B000BB2A7 /* AddStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45E012452161B000BB2A7 /* AddStoryViewController.swift */; };
 		12F45E042452162C000BB2A7 /* FriendProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45E032452162C000BB2A7 /* FriendProfileViewController.swift */; };
 		12F45E062452164E000BB2A7 /* Restaurants2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F45E052452164E000BB2A7 /* Restaurants2TableViewController.swift */; };
-		1E897D7F2452167200B4A1B4 /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E897D7E2452167200B4A1B4 /* BottomTabBar.swift */; };
+		1E897D7F2452167200B4A1B4 /* BottomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E897D7E2452167200B4A1B4 /* BottomTabBarController.swift */; };
 		1E897D8324521C3100B4A1B4 /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E897D8224521C3100B4A1B4 /* PreferencesTableViewController.swift */; };
 		2E905D1B23FDDDE66F1D20A7 /* Pods_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47F052B0F489187EE74DB07 /* Pods_app.framework */; };
 		6916B3AE24516C3A003AF959 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6916B3AD24516C3A003AF959 /* Extensions.swift */; };
@@ -43,7 +43,7 @@
 		12F45E032452162C000BB2A7 /* FriendProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileViewController.swift; sourceTree = "<group>"; };
 		12F45E052452164E000BB2A7 /* Restaurants2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants2TableViewController.swift; sourceTree = "<group>"; };
 		144E8F897E3FB090708353E4 /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
-		1E897D7E2452167200B4A1B4 /* BottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBar.swift; sourceTree = "<group>"; };
+		1E897D7E2452167200B4A1B4 /* BottomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBarController.swift; sourceTree = "<group>"; };
 		1E897D8224521C3100B4A1B4 /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
 		6916B3AD24516C3A003AF959 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		691CE6222454C85100C0C6DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 				12F45E012452161B000BB2A7 /* AddStoryViewController.swift */,
 				12F45E032452162C000BB2A7 /* FriendProfileViewController.swift */,
 				12F45E052452164E000BB2A7 /* Restaurants2TableViewController.swift */,
-				1E897D7E2452167200B4A1B4 /* BottomTabBar.swift */,
+				1E897D7E2452167200B4A1B4 /* BottomTabBarController.swift */,
 				1E897D8224521C3100B4A1B4 /* PreferencesTableViewController.swift */,
 			);
 			path = Controllers;
@@ -287,7 +287,7 @@
 				A39CF753244918DC008106E9 /* ScreenDimensions.swift in Sources */,
 				12F45DF82452155E000BB2A7 /* HomeTableViewController.swift in Sources */,
 				A3DB3DF224424F330014B591 /* AppDelegate.swift in Sources */,
-				1E897D7F2452167200B4A1B4 /* BottomTabBar.swift in Sources */,
+				1E897D7F2452167200B4A1B4 /* BottomTabBarController.swift in Sources */,
 				A3DB3DF424424F330014B591 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
