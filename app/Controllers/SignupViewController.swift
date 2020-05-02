@@ -9,6 +9,7 @@
 import UIKit
 import YogaKit
 import SwiftSVG
+import FirebaseAuth
 
 class SignupViewController: UIViewController {
     
@@ -38,7 +39,14 @@ class SignupViewController: UIViewController {
         let button = UIButton()
         button.styleSignupButton()
         button.setTitle("Create an account", for: .normal)
+        button.addTarget(self, action: #selector(signupPressed(sender:)), for: .touchUpInside)
         return button
+    }()
+    
+    lazy var alertPopup: UIAlertController = {
+        let alert = UIAlertController(title: "Signup Failed", message: "", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil))
+        return alert
     }()
 
     override func viewSafeAreaInsetsDidChange() {
@@ -58,6 +66,17 @@ class SignupViewController: UIViewController {
     
     @objc func backPressed(sender: UIButton!) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func signupPressed(sender: UIButton!) {
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { authResult, error in
+            if error == nil {
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                self.alertPopup.message = error?.localizedDescription
+                self.present(self.alertPopup, animated: true, completion: nil)
+            }
+        }
     }
 
 }

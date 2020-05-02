@@ -8,6 +8,7 @@
 
 import UIKit
 import YogaKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -66,6 +67,12 @@ class LoginViewController: UIViewController {
         navigationController.modalPresentationStyle = .overFullScreen
         return navigationController
     }()
+    
+    lazy var alertPopup: UIAlertController = {
+        let alert = UIAlertController(title: "Login Failed", message: "", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil))
+        return alert
+    }()
 
     override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
@@ -86,7 +93,15 @@ class LoginViewController: UIViewController {
 
     @objc func loginPressed(sender: UIButton!) {
         //let restaurantTableViewCell = RestaurantTableViewCell()
-        self.present(preferenceNavigator, animated: true, completion: nil)
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { [weak self] authResult, error in
+            guard let strongSelf = self else { return }
+            if error == nil {
+                strongSelf.present(strongSelf.preferenceNavigator, animated: true, completion: nil)
+            } else {
+                strongSelf.alertPopup.message = error?.localizedDescription
+                strongSelf.present(strongSelf.alertPopup, animated: true, completion: nil)
+            }
+        }
     }
 
     @objc func signupPressed(sender: UIButton!) {
