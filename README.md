@@ -106,12 +106,11 @@ Want a decent meal with your friends, but don't know where to meet up? Well look
 ## Wireframes
 ![](https://i.imgur.com/5hakwHi.jpg)
 
-
 ### [BONUS] Digital Wireframes & Mockups
 ![](https://i.imgur.com/Bxpl8TN.png)
+![](Foodie-wireframe.png)
 
 ### [BONUS] Interactive Prototype
-
 ![](Foodie.gif)
 
 ## Schema 
