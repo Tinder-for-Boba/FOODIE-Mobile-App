@@ -1,6 +1,7 @@
 # FOODIE <3
 
-## DEMO
+### DEMO LINK: [CLICK HERE](https://www.youtube.com/watch?v=uQx6UJ881IY&t=29s)
+### DESIGN LINK: [CLICK HERE](https://www.figma.com/file/6eg0nPyFuuAe1b6IqA7TI8/CodePath-Design-Collab?node-id=56%3A0)
 
 <image src='./Foodie.gif' width=340 />
 
