@@ -1,8 +1,8 @@
 # FOODIE <3
 
-## Current Progress
+## DEMO
 
-<image src='http://g.recordit.co/e5viU7FBO0.gif' width=340 />
+<image src='./Foodie.gif' width=340 />
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -112,7 +112,7 @@ Want a decent meal with your friends, but don't know where to meet up? Well look
 
 ### [BONUS] Interactive Prototype
 
-![](http://g.recordit.co/HvrSY3OnYg.gif)
+![](Foodie.gif)
 
 ## Schema 
 
